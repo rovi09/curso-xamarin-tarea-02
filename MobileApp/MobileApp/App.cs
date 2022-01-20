@@ -23,6 +23,17 @@ namespace MobileApp
 
 			container.Children.Add(
 					new StackLayout
+					{
+						HorizontalOptions = LayoutOptions.End,
+						Children =
+						{
+							new Button { Text = "/"},
+						}
+					}
+				);
+
+			container.Children.Add(
+					new StackLayout
                     {
 						Orientation = StackOrientation.Horizontal,
 						Children =
@@ -30,6 +41,7 @@ namespace MobileApp
 							new Button { Text = "7" },
 							new Button { Text = "8" },
 							new Button { Text = "9" },
+							new Button { Text = "*" },
 						}
                     }
 				);
@@ -43,6 +55,7 @@ namespace MobileApp
 							new Button { Text = "4" },
 							new Button { Text = "5" },
 							new Button { Text = "6" },
+							new Button { Text = "+" },
 						}
 					}
 				);
@@ -55,6 +68,20 @@ namespace MobileApp
 							new Button { Text = "1" },
 							new Button { Text = "2" },
 							new Button { Text = "3" },
+							new Button { Text = "-" },
+						}
+					}
+				);
+			container.Children.Add(
+					new StackLayout
+					{
+						Orientation = StackOrientation.Horizontal,
+						HorizontalOptions = LayoutOptions.End,
+						Children =
+						{
+							new Button { Text = "0" },
+							new Button { Text = "." },
+							new Button { Text = "=" },
 						}
 					}
 				);
